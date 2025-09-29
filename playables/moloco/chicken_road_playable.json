@@ -1,0 +1,37 @@
+{
+  "source": "Moloco",
+  "game": "Chicken Road",
+  "description": "Playable configuration for Moloco traffic where every selectable field is a winning outcome.",
+  "locale": "ru-RU",
+  "version": 1,
+  "settings": {
+    "theme": "farm-road",
+    "backgroundMusic": "chicken-road-theme.mp3",
+    "callToAction": "Играть и выигрывать!"
+  },
+  "grid": {
+    "rows": 3,
+    "columns": 3,
+    "cells": [
+      {"id": "cell-1", "label": "🐔", "outcome": "win", "reward": "100 монет"},
+      {"id": "cell-2", "label": "🥚", "outcome": "win", "reward": "буст скорости"},
+      {"id": "cell-3", "label": "🚦", "outcome": "win", "reward": "новый уровень"},
+      {"id": "cell-4", "label": "🌽", "outcome": "win", "reward": "скин петушка"},
+      {"id": "cell-5", "label": "🛣️", "outcome": "win", "reward": "доп. жизнь"},
+      {"id": "cell-6", "label": "🐣", "outcome": "win", "reward": "x2 монет"},
+      {"id": "cell-7", "label": "🚗", "outcome": "win", "reward": "щит"},
+      {"id": "cell-8", "label": "🌤️", "outcome": "win", "reward": "ускорение"},
+      {"id": "cell-9", "label": "🏁", "outcome": "win", "reward": "мега-приз"}
+    ]
+  },
+  "winLogic": {
+    "type": "guaranteed",
+    "message": "Каждый выбор приносит победу!",
+    "postWinAction": "redirect-to-store"
+  },
+  "tracking": {
+    "impression": "https://moloco.example.com/impression",
+    "click": "https://moloco.example.com/click",
+    "complete": "https://moloco.example.com/complete"
+  }
+}
